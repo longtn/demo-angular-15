@@ -8,4 +8,9 @@
 
 ## Formatter
 
-> Prettier
+> Prettier (default)
+
+## Styles
+
+> Angular Material
+> https://material.angular.io/
