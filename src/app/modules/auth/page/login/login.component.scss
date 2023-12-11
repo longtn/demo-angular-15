@@ -1,0 +1,22 @@
+.login-form {
+  min-width: 500px;
+  max-width: 800px;
+
+  .card {
+    min-width: 120px;
+    margin: 20px auto;
+
+    .card-content {
+        margin-top: 20px;
+    }
+
+    .full-width {
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
+      margin: 5px;
+    }
+  }
+}

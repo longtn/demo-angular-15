@@ -5,12 +5,7 @@ import { RouterModule } from '@angular/router';
 import { MaterialModule } from './material.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    RouterModule,
-  ],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterModule],
   exports: [
     CommonModule,
     FormsModule,
