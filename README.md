@@ -1,16 +1,21 @@
-## Angular install
+## Angular version
 
 > npm install -g @angular/cli@15
 
 ## Project structure
 
-> https://github.com/mathisGarberg/angular-folder-structure
+https://github.com/mathisGarberg/angular-folder-structure
 
 ## Formatter
 
-> Prettier (default)
+Prettier (default)
 
 ## Styles
 
-> Angular Material
-> https://material.angular.io/
+Angular Material
+https://material.angular.io/
+
+## Mock API
+
+json-server
+https://github.com/typicode/json-server
