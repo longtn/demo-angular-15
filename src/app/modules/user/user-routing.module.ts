@@ -1,16 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './page/home/home.component';
+import { ImportComponent } from './page/import/import.component';
+import { ReportComponent } from './page/report/report.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'dashboard',
     pathMatch: 'full',
   },
   {
-    path: 'home',
+    path: 'dashboard',
     component: HomeComponent,
+  },
+  {
+    path: 'import',
+    component: ImportComponent,
+  },
+  {
+    path: 'report',
+    component: ReportComponent,
   },
 ];
 

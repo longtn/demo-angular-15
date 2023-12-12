@@ -22,7 +22,7 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     children: [
       {
-        path: 'dashboard',
+        path: '',
         loadChildren: () =>
           import('@modules/user/user.module').then((m) => m.UserModule),
       },

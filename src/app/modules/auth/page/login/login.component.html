@@ -1,7 +1,7 @@
 <form [formGroup]="formGroup" class="login-form" (ngSubmit)="onSubmit()">
   <mat-card class="card">
     <mat-card-header>
-      <mat-card-title>Login</mat-card-title>
+      <mat-card-title>Demo</mat-card-title>
     </mat-card-header>
     <mat-card-content class="card-content">
       <div class="row">
@@ -17,7 +17,12 @@
         </div>
         <div class="col">
           <mat-form-field class="full-width">
-            <input matInput placeholder="Password" formControlName="password" />
+            <input
+              matInput
+              placeholder="Password"
+              formControlName="password"
+              type="password"
+            />
             <mat-error
               *ngIf="formGroup.controls['password'].hasError('required')"
             >

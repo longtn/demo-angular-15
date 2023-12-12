@@ -14,8 +14,3 @@ Prettier (default)
 
 Angular Material
 https://material.angular.io/
-
-## Mock API
-
-json-server
-https://github.com/typicode/json-server

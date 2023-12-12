@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { User } from '@data/schema/user';
 import { environment } from '@env';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -10,14 +10,24 @@ import { Observable } from 'rxjs';
 export class AuthService {
   constructor(private http: HttpClient) {}
 
-  onLogin(loginRequest: User): Observable<User> {
-    return this.http.post<User>(`${environment.apiUrl}/auth/login`, {
-      username: loginRequest.username,
-      password: loginRequest.password,
-    });
+  onLogin(req: any): Observable<any> {
+    // return this.http.post<User>(`${environment.apiUrl}/auth/login`, {
+    //   username: req.username,
+    //   password: req.password,
+    // });
+
+    if (req.username == 'user' && req.password == 'user') {
+      const res: Observable<User> = of({
+        username: 'user',
+        password: 'user',
+        token: '',
+      });
+
+      return res;
+    }
+
+    return of(null);
   }
 
-  onLogout() {
-    //this.cookieService.delete('Authorization', '/');
-  }
+  onLogout() {}
 }
