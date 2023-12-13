@@ -27,12 +27,13 @@
                   />
                 </mat-form-field>
               </div>
-              <mat-progress-bar
-                class="progress-bar"
-                mode="determinate"
-                [value]="uploadProgress"
-              >
-              </mat-progress-bar>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  [style.width]="uploadProgress + '%'"
+                ></div>
+                <div class="progress-text">{{ uploadProgress }}%</div>
+              </div>
               <div class="row buttons">
                 <button
                   mat-raised-button

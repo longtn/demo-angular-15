@@ -27,8 +27,25 @@
   margin: 20px;
 }
 
+.progress {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  border: 1px solid #ccc;
+}
+
 .progress-bar {
-  height: 15px;
-  width: auto;
-  color: green;
+  height: 100%;
+  background-color: green;
+  position: relative;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
 }
